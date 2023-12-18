@@ -1,0 +1,1 @@
+# Explicação de como está organizado os arquivo de banco de dados para PARES DE MOEDAS
