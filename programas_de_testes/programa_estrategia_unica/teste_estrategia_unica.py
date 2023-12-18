@@ -1,15 +1,25 @@
 import sys
 import os
 from dotenv import load_dotenv
-load_dotenv() 
-
+load_dotenv()
 sys.path.append(os.environ.get('CAMINHO_DIRETORIOS_DE_ESTRATEGIAS'))
-
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 from estrategias import rsi
 
-def mostrar_resutados(valor_inicial, df_group_trades_raw, df):
+import pandas as pd
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+
+def mostrar_resultado():
+    '''
+    Mostrar a tabela similar a que temos no metatrader.
+    Recebe um dataframe com as operações realizadas
+    e retorna os resultados visualmente explicativas
+    '''
+    pass
+
+
+def mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df):
     '''
     Recebe o valor inicial do investimento, o dataframe com o conjunto de 
     operações realizadas, e o dataframe com os dados para formular o dados utilizados como
@@ -76,10 +86,10 @@ def mostrar_resutados(valor_inicial, df_group_trades_raw, df):
                         name='Venda Fechada'), row=1, col=1)
 
     
-    # Adicionando Grafico RSI do RSI
-    fig.add_trace(go.Scatter(x=df['Datetime'],
-                            y=df['rsi'],
-                            name=f'RSI'), row=2, col=1)
+    # # Adicionando Grafico RSI do RSI
+    # fig.add_trace(go.Scatter(x=df['Datetime'],
+    #                         y=df['rsi'],
+    #                         name=f'RSI'), row=2, col=1)
     
     # Criando um dicionário de limitação de hora e dias que devem ser excluidos, como é bitcoin
     #fig.update_xaxes(rangebreaks=[dict(bounds=[17,10], pattern='hour'), dict(bounds=['sat','mon'])])
@@ -90,7 +100,8 @@ def mostrar_resutados(valor_inicial, df_group_trades_raw, df):
 
 
 def main():
-    banco_de_dados = 'banco_de_dados/criptomoedas/btcusd_2023-11-03_2023-12-03_1mes.csv'
+    banco_de_dados = 'banco_de_dados\\candles\\criptomoedas\\btcusd_2023-11-03_2023-12-03_1mes.csv'
+    df = pd.read_csv(banco_de_dados)
     valor_inicial = 100000
     bet_size = 100
     periodos_rsi = 14
@@ -99,12 +110,10 @@ def main():
     percentual_compra = 1.005
     percentual_venda = 0.997
 
-    valor_inicial = 100000
-    bet_size = 100
-
     # Resultado Operacaoes e Grafico
-    df_group_trades_raw, df = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
-    mostrar_resutados(valor_inicial, df_group_trades_raw, df)
+    df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
+    
+    mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df)
 
 
 main()

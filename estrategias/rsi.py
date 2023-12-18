@@ -108,5 +108,5 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
     df_group_trades_raw = pd.DataFrame(list_trades)
     df_group_trades_raw.set_index('time', inplace=True)
 
-    return df_group_trades_raw, df
+    return df_group_trades_raw
 
