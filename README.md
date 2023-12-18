@@ -47,12 +47,10 @@ Como usar o GIT:
         Buscar atualizações: git pull origin main
     
 
-
-
 Instalações necessárias:
-
     pip install yfinance
     pip install python-dotenv
+    pip install plotly
 
 Adicionar arquivo .env com as seguintes variaveis:
     CAMINHO_DIRETORIOS_DE_ESTRATEGIAS
