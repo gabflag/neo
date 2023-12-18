@@ -60,3 +60,5 @@ Instalações necessárias:
 
 Adicionar arquivo .env com as seguintes variaveis:
     CAMINHO_DIRETORIOS_DE_ESTRATEGIAS
+
+feito uma atualização no repositório remoto
