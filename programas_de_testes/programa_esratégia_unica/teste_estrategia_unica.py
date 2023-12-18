@@ -91,7 +91,7 @@ def mostrar_resutados(valor_inicial, df_group_trades_raw, df):
 
 
 def main():
-    banco_de_dados = 'banco_de_dados/criptomoedas/btcusd_5_min.csv'
+    banco_de_dados = 'banco_de_dados/criptomoedas/btcusd_2023-11-03_2023-12-03_1mes.csv'
     valor_inicial = 100000
     bet_size = 100
     periodos_rsi = 14
