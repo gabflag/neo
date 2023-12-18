@@ -42,6 +42,11 @@ Como usar o GIT:
         git status
         git push origin main
 
+    Buscar atualizações no repositório remoto:
+        Para verificar se esta tudo joia: git remote -v
+        Buscar atualizações: git pull origin main
+    
+
 
 
 Instalações necessárias:
