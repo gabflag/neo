@@ -87,7 +87,6 @@ def mostrar_resutados(valor_inicial, df_group_trades_raw, df):
     
     # Remove uma tela que tem de baixo
     fig.update_layout(height=800, xaxis_rangeslider_visible=False)
-    df_group_trades_raw.to_csv('resultado_op.csv')
     fig.show()
 
 
