@@ -1,5 +1,7 @@
 # Neo
 
+Link oficial do respositorio: https://github.com/gabflag/neo
+
 Repositorio destinado para elaborar as estratégias e testar as mesmas com o Python.
 
 Principais definições do projeto:
@@ -25,32 +27,36 @@ Principais definições do projeto:
 
 Como usar o GIT:
 
-É necessários estar sincronizado o repositório local com o repositório remoto. Comando relevantes:
-    Retorna se ouve alguma atualização no repositório remoto: git fetch
-    Verifica o que foi realizado no repositório local: git status
-    Para verificar os logs do Git (não é o github): git log 
+    É necessários estar sincronizado o repositório local com o repositório remoto. Comando relevantes:
+        Retorna se ouve alguma atualização no repositório remoto: git fetch
+        Verifica o que foi realizado no repositório local: git status
+        Para verificar os logs do Git (não é o github): git log 
 
-    Como sincronizar:
-        Inicializar o Git: git init
-        Criar o branch: git branch -M main
-        Adicionando repositório remoto (através do ssh): git remote add origin git@github.com:gabflag/neo.git
-        Para fazer o pull (puxar as atualizações do repositório remoto): git pull origin main
+        Como sincronizar:
+            Inicializar o Git: git init
+            Criar o branch: git branch -M main
+            Adicionando repositório remoto (através do ssh): git remote add origin git@github.com:gabflag/neo.git
+            Para fazer o pull (puxar as atualizações do repositório remoto): git pull origin main
+        
+        Para subir as atualizações do repositório local para o remoto:
+            git add *
+            git commit -m 'atualizei uma parte do código'
+            git status
+            git push origin main
+
+        Buscar atualizações no repositório remoto:
+            Para verificar se esta tudo joia: git remote -v
+            Buscar atualizações: git pull origin main
+        
+        Caso queira desfazer o git add:
+            git reset
+        
     
-    Para subir as atualizações do repositório local para o remoto:
-        git add *
-        git commit -m 'atualizei uma parte do código'
-        git status
-        git push origin main
-
-    Buscar atualizações no repositório remoto:
-        Para verificar se esta tudo joia: git remote -v
-        Buscar atualizações: git pull origin main
-    
-
 Instalações necessárias:
     pip install yfinance
     pip install python-dotenv
     pip install plotly
+
 
 Adicionar arquivo .env com as seguintes variaveis:
     CAMINHO_DIRETORIOS_DE_ESTRATEGIAS

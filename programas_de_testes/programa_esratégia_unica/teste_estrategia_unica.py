@@ -9,7 +9,6 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from estrategias import rsi
 
-
 def mostrar_resutados(valor_inicial, df_group_trades_raw, df):
     '''
     Recebe o valor inicial do investimento, o dataframe com o conjunto de 
