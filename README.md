@@ -41,3 +41,13 @@ Como usar o GIT:
         git commit -m 'atualizei uma parte do código'
         git status
         git push origin main
+
+
+
+Instalações necessárias:
+
+    pip install yfinance
+    pip install python-dotenv
+
+Adicionar arquivo .env com as seguintes variaveis:
+    CAMINHO_DIRETORIOS_DE_ESTRATEGIAS
