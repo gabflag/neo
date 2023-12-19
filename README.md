@@ -55,7 +55,6 @@ Como usar o GIT:
 
         Teste no branch Gabriel
     
-
         Criando um novo Branch e logando nele:
             Estar logando no branch principal:
                 git checkout main
@@ -63,10 +62,6 @@ Como usar o GIT:
                 git branch gabriel 
             Checando os branchs:
                 git branch 
-
-
-
-
 
 
 Instalações necessárias:
