@@ -50,7 +50,8 @@ Como usar o GIT:
         
         Caso queira desfazer o git add:
             git reset
-        
+            ou
+            git reset --hard
     
 Instalações necessárias:
     pip install yfinance
