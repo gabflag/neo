@@ -83,7 +83,8 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
             vendido = operando = False
             list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'],
                              'hora_abertura':hora_abertura,'hora_fechou': row['Datetime'], 
-                             'kind':'Close Sell', 'quantity':bet_size,'diferenca_percentual':diferenca_percentual}]
+                             'kind':'Close Sell', 'quantity':bet_size,'diferenca_percentual':diferenca_percentual,
+                             'time': row['Datetime']}]
 
             valor_ao_abrir_posicao = 0
             valor_ao_abrir_posicao = 0
@@ -95,7 +96,8 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
             comprado = operando = False
             list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'], 
                              'hora_abertura':hora_abertura,'hora_fechou': row['Datetime'], 
-                             'kind':'Close Buy', 'quantity':bet_size, 'diferenca_percentual':diferenca_percentual}]
+                             'kind':'Close Buy', 'quantity':bet_size, 'diferenca_percentual':diferenca_percentual,
+                             'time': row['Datetime']}]
 
             valor_ao_abrir_posicao = 0
             valor_ao_abrir_posicao = 0
@@ -111,7 +113,8 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
             hora_abertura = row['Datetime']
             list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
                              'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
-                             'kind':'Buy', 'quantity':bet_size, 'diferenca_percentual':pd.NA}]
+                             'kind':'Buy', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
+                             'time': row['Datetime']}]
         
         # Vender
         elif row['rsi'] >= rsi_teto and operando == False:
@@ -120,13 +123,13 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
             hora_abertura = row['Datetime']
             list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
                     'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
-                    'kind':'Sell', 'quantity':bet_size, 'diferenca_percentual':pd.NA}]
-
+                    'kind':'Sell', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
+                    'time': row['Datetime']}]
 
 
     # Criando df de operações
     df_group_trades_raw = pd.DataFrame(list_trades)
-    df_group_trades_raw.set_index('hora_abertura', inplace=True)
+    df_group_trades_raw.set_index('time', inplace=True)
 
     return df_group_trades_raw
 
