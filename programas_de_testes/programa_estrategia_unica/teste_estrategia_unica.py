@@ -132,7 +132,7 @@ def main():
     # Resultado Operacaoes e Grafico
     df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
     
-    mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df)
+    mostrar_grafico_operacao_rsi(df_group_trades_raw, df)
     df_group_trades_raw.to_csv('teste.csv')
 
 
