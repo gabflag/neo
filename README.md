@@ -63,6 +63,10 @@ Como usar o GIT:
             Checando os branchs:
                 git branch 
 
+            Para atualizar o branch secundario executar os comandos:
+                git checkout gabriel
+                git merge main
+
 
 Instalações necessárias:
     pip install yfinance
