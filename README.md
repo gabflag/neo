@@ -61,7 +61,15 @@ Como usar o GIT:
             Criando e logando no branch gabriel: 
                 git branch gabriel 
             Checando os branchs:
-                git branch 
+                git branch
+
+            
+            Antes de fazer os comandos abaixo, toda vez que executar
+            alguma alteração é necessário comitar no branch em que se está
+            
+            Para atualizar o branch primario executar os comandos:
+                git checkout main
+                git merge gabriel
 
             Para atualizar o branch secundario executar os comandos:
                 git checkout gabriel
