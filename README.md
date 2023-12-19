@@ -52,6 +52,8 @@ Como usar o GIT:
             git reset
             ou
             git reset --hard
+
+        Teste no branch Gabriel
     
 
         Criando um novo Branch e logando nele:
