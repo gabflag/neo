@@ -52,6 +52,9 @@ Como usar o GIT:
             git reset
             ou
             git reset --hard
+            
+        Desfazer alteração em algum arquivo em especifico:
+            git restore estrategias/rsi.py
 
         Teste no branch Gabriel
     
