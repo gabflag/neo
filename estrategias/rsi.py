@@ -17,6 +17,10 @@ def get_rsi(df, periods):
     return rsi
 
 
+def aplicar_percentual(numero, percentual):
+    resultado = numero * (1 + (percentual / 100))
+    return resultado
+
 def calcular_diferenca_percentual(valor_antigo, valor_novo):
     diferenca = valor_novo - valor_antigo
     diferenca_percentual = (diferenca / abs(valor_antigo)) * 100
@@ -64,6 +68,9 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
     df = pd.read_csv(banco_de_dados)
     df['rsi'] = get_rsi(df, periodos_rsi)
 
+    resultado_investimento = valor_inicial
+    balanco_durante_operacao = valor_inicial
+
     list_trades = []
     comprado = vendido = operando = False
     valor_ao_abrir_posicao = 0
@@ -80,12 +87,17 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
         # Fechar operacao vendido
         if (row['rsi'] <= rsi_base and operando and vendido) or (atingiu_objetivo_venda and operando and vendido):
             diferenca_percentual = calcular_diferenca_percentual(row['Close'], valor_ao_abrir_posicao)
+            resultado_investimento = aplicar_percentual(resultado_investimento, diferenca_percentual)
+            balanco_durante_operacao = resultado_investimento
+            
             vendido = operando = False
-            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'],
+            
+            list_trades += [{'valor_investimento': resultado_investimento, 'durante_operacao': pd.NA,
+                             'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'],
                              'hora_abertura':hora_abertura,'hora_fechou': row['Datetime'], 
                              'kind':'Close Sell', 'quantity':bet_size,'diferenca_percentual':diferenca_percentual,
                              'time': row['Datetime']}]
-
+            
             valor_ao_abrir_posicao = 0
             valor_ao_abrir_posicao = 0
 
@@ -93,8 +105,13 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
         # Fechar operacao comprado
         elif (row['rsi'] >= rsi_teto and operando and comprado) or (atingiu_objetivo_compra and operando and comprado):
             diferenca_percentual = calcular_diferenca_percentual(valor_ao_abrir_posicao, row['Close'])
+            resultado_investimento = aplicar_percentual(resultado_investimento, diferenca_percentual)
+            balanco_durante_operacao = resultado_investimento
+
             comprado = operando = False
-            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'], 
+            
+            list_trades += [{'valor_investimento': resultado_investimento, 'durante_operacao': pd.NA, 
+                             'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'], 
                              'hora_abertura':hora_abertura,'hora_fechou': row['Datetime'], 
                              'kind':'Close Buy', 'quantity':bet_size, 'diferenca_percentual':diferenca_percentual,
                              'time': row['Datetime']}]
@@ -102,29 +119,45 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
             valor_ao_abrir_posicao = 0
             valor_ao_abrir_posicao = 0
 
-       
+
+
+        ##########################
+        ######### Durante operações
+        if operando == True:
+            diferenca_percentual = calcular_diferenca_percentual(valor_ao_abrir_posicao, row['Close'])
+            balanco_durante_operacao = aplicar_percentual(resultado_investimento, diferenca_percentual)
+
+            list_trades += [{'valor_investimento': pd.NA, 'durante_operacao': balanco_durante_operacao,
+                            'preco_de_abertura':pd.NA, 'preco_de_fechamento': pd.NA, 
+                            'hora_abertura':pd.NA, 'hora_fechou': pd.NA, 
+                            'kind':'During', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
+                            'time': row['Datetime']}]
+
         ##########################
         ######### Abrir operações
-
         # Comprar
         if row['rsi'] <= rsi_base and operando == False:
             valor_ao_abrir_posicao = row['Close']
             comprado = operando = True
             hora_abertura = row['Datetime']
-            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
-                             'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
-                             'kind':'Buy', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
-                             'time': row['Datetime']}]
+            list_trades += [{'valor_investimento': resultado_investimento, 'durante_operacao': pd.NA,
+                            'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
+                            'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
+                            'kind':'Buy', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
+                            'time': row['Datetime']}]
         
         # Vender
         elif row['rsi'] >= rsi_teto and operando == False:
             valor_ao_abrir_posicao = row['Close']
             vendido = operando = True
             hora_abertura = row['Datetime']
-            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
-                    'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
-                    'kind':'Sell', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
-                    'time': row['Datetime']}]
+            list_trades += [{'valor_investimento': resultado_investimento, 'durante_operacao': pd.NA,
+                            'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
+                            'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
+                            'kind':'Sell', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
+                            'time': row['Datetime']}]
+
+
 
 
     # Criando df de operações
