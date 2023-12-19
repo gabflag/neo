@@ -17,6 +17,12 @@ def get_rsi(df, periods):
     return rsi
 
 
+def calcular_diferenca_percentual(valor_antigo, valor_novo):
+    diferenca = valor_novo - valor_antigo
+    diferenca_percentual = (diferenca / abs(valor_antigo)) * 100
+    return diferenca_percentual
+
+
 def verifica_variacao_compra(valor_anterior, valor_atual, percentual_compra):
     '''
     Função que verifica se um número atual é maior do que a variação
@@ -53,7 +59,6 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
         Quando passar o ponto inferiior do RSI irá ser dando uma ordem de compra.
         A regras de saida em nivel percentual de lucro do valor de entrada e venda são definidas nas variaveis 'percentual_compra' 'percentual_venda'
         bet_size é a forma padrão para simular o contrato, volume, quantidade de ativos adiquiridos
-    
     '''
 
     df = pd.read_csv(banco_de_dados)
@@ -62,6 +67,7 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
     list_trades = []
     comprado = vendido = operando = False
     valor_ao_abrir_posicao = 0
+    hora_abertura = 0
     
     for idx, row in df.iterrows():
    
@@ -73,40 +79,54 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
 
         # Fechar operacao vendido
         if (row['rsi'] <= rsi_base and operando and vendido) or (atingiu_objetivo_venda and operando and vendido):
-            resultado = valor_ao_abrir_posicao - row['Close']
-            valor_inicial += resultado
-            valor_ao_abrir_posicao = 0
+            diferenca_percentual = calcular_diferenca_percentual(row['Close'], valor_ao_abrir_posicao)
             vendido = operando = False
-            list_trades += [{'price': row['Close'], 'time': row['Datetime'], 'kind':'Close Sell', 'quantity':bet_size, 'resultado':resultado}]
+            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'],
+                             'hora_abertura':hora_abertura,'hora_fechou': row['Datetime'], 
+                             'kind':'Close Sell', 'quantity':bet_size,'diferenca_percentual':diferenca_percentual}]
+
+            valor_ao_abrir_posicao = 0
+            valor_ao_abrir_posicao = 0
 
 
         # Fechar operacao comprado
         elif (row['rsi'] >= rsi_teto and operando and comprado) or (atingiu_objetivo_compra and operando and comprado):
-            resultado = row['Close'] - valor_ao_abrir_posicao
-            valor_inicial += resultado
-            valor_ao_abrir_posicao = 0
+            diferenca_percentual = calcular_diferenca_percentual(valor_ao_abrir_posicao, row['Close'])
             comprado = operando = False
-            list_trades += [{'price': row['Close'], 'time': row['Datetime'], 'kind':'Close Buy', 'quantity':bet_size, 'resultado':resultado}]
-    
+            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': row['Close'], 
+                             'hora_abertura':hora_abertura,'hora_fechou': row['Datetime'], 
+                             'kind':'Close Buy', 'quantity':bet_size, 'diferenca_percentual':diferenca_percentual}]
+
+            valor_ao_abrir_posicao = 0
+            valor_ao_abrir_posicao = 0
+
+       
         ##########################
         ######### Abrir operações
 
         # Comprar
         if row['rsi'] <= rsi_base and operando == False:
-            list_trades += [{'price': row['Close'], 'time': row['Datetime'], 'kind':'buy', 'quantity':bet_size, 'resultado': pd.NA}]
             valor_ao_abrir_posicao = row['Close']
             comprado = operando = True
+            hora_abertura = row['Datetime']
+            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
+                             'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
+                             'kind':'Buy', 'quantity':bet_size, 'diferenca_percentual':pd.NA}]
         
         # Vender
         elif row['rsi'] >= rsi_teto and operando == False:
-            list_trades += [{'price': row['Close'], 'time': row['Datetime'], 'kind':'sell', 'quantity':bet_size, 'resultado': pd.NA}]
             valor_ao_abrir_posicao = row['Close']
             vendido = operando = True
+            hora_abertura = row['Datetime']
+            list_trades += [{'preco_de_abertura':valor_ao_abrir_posicao, 'preco_de_fechamento': pd.NA, 
+                    'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
+                    'kind':'Sell', 'quantity':bet_size, 'diferenca_percentual':pd.NA}]
+
 
 
     # Criando df de operações
     df_group_trades_raw = pd.DataFrame(list_trades)
-    df_group_trades_raw.set_index('time', inplace=True)
+    df_group_trades_raw.set_index('hora_abertura', inplace=True)
 
     return df_group_trades_raw
 

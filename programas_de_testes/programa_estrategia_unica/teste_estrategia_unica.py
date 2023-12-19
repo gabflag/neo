@@ -26,13 +26,16 @@ def mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df):
     base de preços do ativo que foi utilizado nas negociações
     '''
 
+
+    print('\n\n')
     print(f'Valor final: {valor_inicial}')
-    print(f'Resultado final: {df_group_trades_raw["resultado"].sum()}')
-    print(f'Maior resultado: {df_group_trades_raw["resultado"].max()}')
-    print(f'Menor resultado: {df_group_trades_raw["resultado"].min()}')
+    print(f'Resultado final: {df_group_trades_raw["diferenca_percentual"].sum()}')
+    print(f'Maior resultado: {df_group_trades_raw["diferenca_percentual"].max()}')
+    print(f'Menor resultado: {df_group_trades_raw["diferenca_percentual"].min()}')
     
-    print(f'Media resultados comprados: {df_group_trades_raw[df_group_trades_raw["kind"] == "Close Buy"]["resultado"].mean() }')
-    print(f'Media resultados venda: {df_group_trades_raw[df_group_trades_raw["kind"] == "Close Sell"]["resultado"].mean() }')
+    print(f'Media resultados comprados: {df_group_trades_raw[df_group_trades_raw["kind"] == "Close Buy"]["diferenca_percentual"].mean() }')
+    print(f'Media resultados venda: {df_group_trades_raw[df_group_trades_raw["kind"] == "Close Sell"]["diferenca_percentual"].mean() }')
+    print('\n\n')
 
     # Criando e Plotando no gráfico
     fig = make_subplots(rows=2, cols=1, row_heights=[0.7, 0.3], vertical_spacing=0.02, shared_xaxes=True)
@@ -45,14 +48,13 @@ def mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df):
                                 close=df['Close']), row=1, col=1)
 
     # Operações no gráfico
-    df_buy = df_group_trades_raw[df_group_trades_raw['kind'] == 'buy']
-    df_sell = df_group_trades_raw[df_group_trades_raw['kind'] == 'sell']
-
+    df_buy = df_group_trades_raw[df_group_trades_raw['kind'] == 'Buy']
+    df_sell = df_group_trades_raw[df_group_trades_raw['kind'] == 'Sell']
     df_close_buy = df_group_trades_raw[df_group_trades_raw['kind'] == 'Close Buy']
     df_close_sell = df_group_trades_raw[df_group_trades_raw['kind'] == 'Close Sell']
     
     fig.add_trace(go.Scatter(x=df_buy.index,
-                             y=df_buy['price'],
+                             y=df_buy['preco_de_abertura'],
                              marker_color='#11dd11',
                              marker_size=15,
                              mode='markers',
@@ -60,7 +62,7 @@ def mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df):
                              name='Compra Aberta'), row=1, col=1)
     
     fig.add_trace(go.Scatter(x=df_sell.index,
-                            y=df_sell['price'],
+                            y=df_sell['preco_de_abertura'],
                             marker_color='#993399',
                             marker_size=15,
                             mode='markers',
@@ -69,7 +71,7 @@ def mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df):
 
 
     fig.add_trace(go.Scatter(x=df_close_buy.index,
-                            y=df_close_buy['price'],
+                            y=df_close_buy['preco_de_fechamento'],
                             marker_color='#ffff00',
                             marker_size=5,
                             mode='markers',
@@ -78,7 +80,7 @@ def mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df):
     
 
     fig.add_trace(go.Scatter(x=df_close_sell.index,
-                        y=df_close_sell['price'],
+                        y=df_close_sell['preco_de_fechamento'],
                         marker_color='#0000ff',
                         marker_size=5,
                         mode='markers',
@@ -103,8 +105,8 @@ def main():
     banco_de_dados = os.environ.get('BTC_USD_23_11_03_23_12_03_1MES_CANDLE')
     
     df = pd.read_csv(banco_de_dados)
-    valor_inicial = 100000
-    bet_size = 100
+    valor_inicial = 100
+    bet_size = 1
     periodos_rsi = 14
     rsi_base = 20
     rsi_teto = 85
@@ -115,6 +117,7 @@ def main():
     df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
     
     mostrar_grafico_operacao_rsi(valor_inicial, df_group_trades_raw, df)
+    df_group_trades_raw.to_csv('teste.csv')
 
 
 main()
