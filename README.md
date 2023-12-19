@@ -53,11 +53,20 @@ Como usar o GIT:
             ou
             git reset --hard
     
+
+
         Criando um novo Branch e logando nele:
             Estar logando no branch principal:
                 git checkout main
             Criando e logando no branch gabriel: 
-                git branch gabriel  
+                git branch gabriel 
+            Checando os branchs:
+                git branch 
+
+
+
+
+
 
 Instalações necessárias:
     pip install yfinance
