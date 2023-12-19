@@ -286,7 +286,37 @@ def main():
     rsi_teto = 85
     percentual_compra = 1.005
     percentual_venda = 0.997
-    
+
+    resultados = []
+
+    for periodos_rsi in range(14, 16):
+        for rsi_base in range(15, 20):
+            for rsi_teto in range(80,85):
+                df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
+                df_resultado = realiza_trades(df_group_trades_raw, df)
+
+
+                resultados.append({
+                    'periodos_rsi': periodos_rsi,
+                    'rsi_base': rsi_base,
+                    'rsi_teto': rsi_teto,
+                    'resultado_df': df_resultado.iloc[0]      
+            })
+
+    resultados_df = pd.DataFrame(resultados)
+    resultados_df.to_csv('resultados_completos.csv', index=False)
+
+
+def calcular_tempo_total(segundos_por_execucao, numero_de_execucoes):
+    tempo_total_segundos = segundos_por_execucao * numero_de_execucoes
+    minutos, segundos = divmod(tempo_total_segundos, 60)
+    horas, minutos = divmod(minutos, 60)
+
+    print(f"\n\nTempo total estimado para testar todos os parametros: {horas} horas, {minutos} minutos e {segundos} segundos.\n\n")
+
+
+'''
+    # PARA ESTIMAR O TEMPO DE EXCECUCAO
     start_time = time.time()
 
     df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
@@ -297,38 +327,6 @@ def main():
     elapsed_time = end_time - start_time
     print(f"A função levou {elapsed_time} segundos para ser executada.")
 
-    '''
-    resultados = []
-
-    for periodos_rsi in range(3, 50):
-        for rsi_base in range(2, 49):
-            for rsi_teto in range(51,99):
-                df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
-                df_resultado = mostrar_grafico_operacao_rsi(df_group_trades_raw, df)
-                resultados.append({
-                    'periodos_rsi': periodos_rsi,
-                    'rsi_base': rsi_base,
-                    'rsi_teto': rsi_teto,
-                    'resultado_df': df_resultado
-                })
-
-    resultados_df = pd.DataFrame(resultados)
-    resultados_df.to_csv('resultados_completos.csv', index=False)
-
-    '''
-
-
-
-def calcular_tempo_total(segundos_por_execucao, numero_de_execucoes):
-    tempo_total_segundos = segundos_por_execucao * numero_de_execucoes
-    minutos, segundos = divmod(tempo_total_segundos, 60)
-    horas, minutos = divmod(minutos, 60)
-
-    return horas, minutos, segundos
-
-segundos_por_execucao = 0.3834671974182129
-numero_de_execucoes = 225000
-
-horas, minutos, segundos = calcular_tempo_total(segundos_por_execucao, numero_de_execucoes)
-
-print(f"\n\nTempo total estimado para testar todos os parametros: {horas} horas, {minutos} minutos e {segundos} segundos.\n\n")
+'''
+main()
+#calcular_tempo_total(5, 50)

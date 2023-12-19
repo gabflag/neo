@@ -1,0 +1,951 @@
+periodos_rsi,rsi_base,rsi_teto,resultado_df
+14,15,80,"Valor final investido                               1097.337723
+Resultado percentual final                             9.498138
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.727279
+Quantidade de operações positivas                     57.000000
+Percentual de operações positivas                     78.082192
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     21.917808
+Media resultados comprados                             0.402025
+Media resultados venda                                -0.029490
+Número abertura de compra                             27.000000
+Número abertura de venda                              46.000000
+Número fechamento de compra                           27.000000
+Número fechamento de venda                            46.000000
+Total de operações abertas                            73.000000
+Total de operações finalizadas                        73.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1191.817748
+Name: 0, dtype: float64"
+14,15,81,"Valor final investido                               1080.650378
+Resultado percentual final                             7.959750
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.727279
+Quantidade de operações positivas                     52.000000
+Percentual de operações positivas                     76.470588
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     23.529412
+Media resultados comprados                             0.404191
+Media resultados venda                                -0.072034
+Número abertura de compra                             27.000000
+Número abertura de venda                              41.000000
+Número fechamento de compra                           27.000000
+Número fechamento de venda                            41.000000
+Total de operações abertas                            68.000000
+Total de operações finalizadas                        68.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1178.567640
+Name: 0, dtype: float64"
+14,15,82,"Valor final investido                               1088.641185
+Resultado percentual final                             8.687406
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.727279
+Quantidade de operações positivas                     51.000000
+Percentual de operações positivas                     76.119403
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     23.880597
+Media resultados comprados                             0.412202
+Media resultados venda                                -0.061051
+Número abertura de compra                             27.000000
+Número abertura de venda                              40.000000
+Número fechamento de compra                           27.000000
+Número fechamento de venda                            40.000000
+Total de operações abertas                            67.000000
+Total de operações finalizadas                        67.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1186.030662
+Name: 0, dtype: float64"
+14,15,83,"Valor final investido                               1114.823072
+Resultado percentual final                            11.045578
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.727279
+Quantidade de operações positivas                     52.000000
+Percentual de operações positivas                     78.787879
+Quantidade de operações negativas                     14.000000
+Percentual de operações negativas                     21.212121
+Media resultados comprados                             0.429597
+Media resultados venda                                -0.014193
+Número abertura de compra                             27.000000
+Número abertura de venda                              39.000000
+Número fechamento de compra                           27.000000
+Número fechamento de venda                            39.000000
+Total de operações abertas                            66.000000
+Total de operações finalizadas                        66.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1203.912988
+Name: 0, dtype: float64"
+14,15,84,"Valor final investido                               1133.603329
+Resultado percentual final                            12.702443
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.727279
+Quantidade de operações positivas                     51.000000
+Percentual de operações positivas                     79.687500
+Quantidade de operações negativas                     13.000000
+Percentual de operações negativas                     20.312500
+Media resultados comprados                             0.474190
+Media resultados venda                                -0.002721
+Número abertura de compra                             27.000000
+Número abertura de venda                              37.000000
+Número fechamento de compra                           27.000000
+Número fechamento de venda                            37.000000
+Total de operações abertas                            64.000000
+Total de operações finalizadas                        64.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1202.357119
+Name: 0, dtype: float64"
+14,16,80,"Valor final investido                               1125.037928
+Resultado percentual final                            11.754727
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     63.000000
+Percentual de operações positivas                     80.769231
+Quantidade de operações negativas                     15.000000
+Percentual de operações negativas                     19.230769
+Media resultados comprados                             0.396883
+Media resultados venda                                -0.011673
+Número abertura de compra                             32.000000
+Número abertura de venda                              47.000000
+Número fechamento de compra                           31.000000
+Número fechamento de venda                            47.000000
+Total de operações abertas                            79.000000
+Total de operações finalizadas                        78.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1191.817748
+Name: 0, dtype: float64"
+14,16,81,"Valor final investido                               1109.629683
+Resultado percentual final                            10.370405
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     58.000000
+Percentual de operações positivas                     79.452055
+Quantidade de operações negativas                     15.000000
+Percentual de operações negativas                     20.547945
+Media resultados comprados                             0.403739
+Media resultados venda                                -0.051084
+Número abertura de compra                             32.000000
+Número abertura de venda                              42.000000
+Número fechamento de compra                           31.000000
+Número fechamento de venda                            42.000000
+Total de operações abertas                            74.000000
+Total de operações finalizadas                        73.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1178.567640
+Name: 0, dtype: float64"
+14,16,82,"Valor final investido                               1116.793289
+Resultado percentual final                            11.005375
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     56.000000
+Percentual de operações positivas                     78.873239
+Quantidade de operações negativas                     15.000000
+Percentual de operações negativas                     21.126761
+Media resultados comprados                             0.419815
+Media resultados venda                                -0.050223
+Número abertura de compra                             32.000000
+Número abertura de venda                              40.000000
+Número fechamento de compra                           31.000000
+Número fechamento de venda                            40.000000
+Total de operações abertas                            72.000000
+Total de operações finalizadas                        71.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1186.030662
+Name: 0, dtype: float64"
+14,16,83,"Valor final investido                               1143.652235
+Resultado percentual final                            13.363546
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     57.000000
+Percentual de operações positivas                     81.428571
+Quantidade de operações negativas                     13.000000
+Percentual de operações negativas                     18.571429
+Media resultados comprados                             0.434966
+Media resultados venda                                -0.003088
+Número abertura de compra                             32.000000
+Número abertura de venda                              39.000000
+Número fechamento de compra                           31.000000
+Número fechamento de venda                            39.000000
+Total de operações abertas                            71.000000
+Total de operações finalizadas                        70.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1203.912988
+Name: 0, dtype: float64"
+14,16,84,"Valor final investido                               1162.918148
+Resultado percentual final                            15.021133
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     56.000000
+Percentual de operações positivas                     82.352941
+Quantidade de operações negativas                     12.000000
+Percentual de operações negativas                     17.647059
+Media resultados comprados                             0.473816
+Media resultados venda                                 0.008995
+Número abertura de compra                             32.000000
+Número abertura de venda                              37.000000
+Número fechamento de compra                           31.000000
+Número fechamento de venda                            37.000000
+Total de operações abertas                            69.000000
+Total de operações finalizadas                        68.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1202.357119
+Name: 0, dtype: float64"
+14,17,80,"Valor final investido                               1142.754703
+Resultado percentual final                            13.317471
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     67.000000
+Percentual de operações positivas                     80.722892
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     19.277108
+Media resultados comprados                             0.379185
+Media resultados venda                                 0.008677
+Número abertura de compra                             35.000000
+Número abertura de venda                              49.000000
+Número fechamento de compra                           34.000000
+Número fechamento de venda                            49.000000
+Total de operações abertas                            84.000000
+Total de operações finalizadas                        83.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1201.474713
+Name: 0, dtype: float64"
+14,17,81,"Valor final investido                               1123.363442
+Resultado percentual final                            11.600000
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     61.000000
+Percentual de operações positivas                     79.220779
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     20.779221
+Media resultados comprados                             0.384893
+Media resultados venda                                -0.034567
+Número abertura de compra                             35.000000
+Número abertura de venda                              43.000000
+Número fechamento de compra                           34.000000
+Número fechamento de venda                            43.000000
+Total de operações abertas                            78.000000
+Total de operações finalizadas                        77.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1182.781001
+Name: 0, dtype: float64"
+14,17,82,"Valor final investido                               1130.615712
+Resultado percentual final                            12.234072
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     59.000000
+Percentual de operações positivas                     78.666667
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     21.333333
+Media resultados comprados                             0.399551
+Media resultados venda                                -0.032943
+Número abertura de compra                             35.000000
+Número abertura de venda                              41.000000
+Número fechamento de compra                           34.000000
+Número fechamento de venda                            41.000000
+Total de operações abertas                            76.000000
+Total de operações finalizadas                        75.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1190.270704
+Name: 0, dtype: float64"
+14,17,83,"Valor final investido                               1155.318430
+Resultado percentual final                            14.375614
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     59.000000
+Percentual de operações positivas                     80.821918
+Quantidade de operações negativas                     14.000000
+Percentual de operações negativas                     19.178082
+Media resultados comprados                             0.413365
+Media resultados venda                                 0.008236
+Número abertura de compra                             35.000000
+Número abertura de venda                              39.000000
+Número fechamento de compra                           34.000000
+Número fechamento de venda                            39.000000
+Total de operações abertas                            74.000000
+Total de operações finalizadas                        73.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1205.619947
+Name: 0, dtype: float64"
+14,17,84,"Valor final investido                               1177.888883
+Resultado percentual final                            16.298535
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.436670
+Quantidade de operações positivas                     58.000000
+Percentual de operações positivas                     81.690141
+Quantidade de operações negativas                     13.000000
+Percentual de operações negativas                     18.309859
+Media resultados comprados                             0.456591
+Media resultados venda                                 0.020931
+Número abertura de compra                             35.000000
+Número abertura de venda                              37.000000
+Número fechamento de compra                           34.000000
+Número fechamento de venda                            37.000000
+Total de operações abertas                            72.000000
+Total de operações finalizadas                        71.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1210.159889
+Name: 0, dtype: float64"
+14,18,80,"Valor final investido                               1147.573604
+Resultado percentual final                            13.727992
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.218903
+Quantidade de operações positivas                     72.000000
+Percentual de operações positivas                     79.120879
+Quantidade de operações negativas                     19.000000
+Percentual de operações negativas                     20.879121
+Media resultados comprados                             0.343486
+Media resultados venda                                 0.012746
+Número abertura de compra                             39.000000
+Número abertura de venda                              53.000000
+Número fechamento de compra                           38.000000
+Número fechamento de venda                            53.000000
+Total de operações abertas                            92.000000
+Total de operações finalizadas                        91.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1215.235362
+Name: 0, dtype: float64"
+14,18,81,"Valor final investido                               1119.503682
+Resultado percentual final                            11.241474
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.183753
+Quantidade de operações positivas                     65.000000
+Percentual de operações positivas                     78.313253
+Quantidade de operações negativas                     18.000000
+Percentual de operações negativas                     21.686747
+Media resultados comprados                             0.337514
+Media resultados venda                                -0.027099
+Número abertura de compra                             38.000000
+Número abertura de venda                              46.000000
+Número fechamento de compra                           37.000000
+Número fechamento de venda                            46.000000
+Total de operações abertas                            84.000000
+Total de operações finalizadas                        83.000000
+Maior rebaixamento ma conta durante operacoes        993.381064
+Maior valor alcançado na conta durante operacoes    1182.257511
+Name: 0, dtype: float64"
+14,18,82,"Valor final investido                               1126.731033
+Resultado percentual final                            11.875547
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.183753
+Quantidade de operações positivas                     63.000000
+Percentual de operações positivas                     77.777778
+Quantidade de operações negativas                     18.000000
+Percentual de operações negativas                     22.222222
+Media resultados comprados                             0.350983
+Media resultados venda                                -0.025246
+Número abertura de compra                             38.000000
+Número abertura de venda                              44.000000
+Número fechamento de compra                           37.000000
+Número fechamento de venda                            44.000000
+Total de operações abertas                            82.000000
+Total de operações finalizadas                        81.000000
+Maior rebaixamento ma conta durante operacoes        993.381064
+Maior valor alcançado na conta durante operacoes    1189.047687
+Name: 0, dtype: float64"
+14,18,83,"Valor final investido                               1142.899223
+Resultado percentual final                            13.279218
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.183753
+Quantidade de operações positivas                     61.000000
+Percentual de operações positivas                     79.220779
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     20.779221
+Media resultados comprados                             0.363681
+Media resultados venda                                -0.004425
+Número abertura de compra                             38.000000
+Número abertura de venda                              40.000000
+Número fechamento de compra                           37.000000
+Número fechamento de venda                            40.000000
+Total de operações abertas                            78.000000
+Total de operações finalizadas                        77.000000
+Maior rebaixamento ma conta durante operacoes        993.927560
+Maior valor alcançado na conta durante operacoes    1191.015435
+Name: 0, dtype: float64"
+14,18,84,"Valor final investido                               1166.455964
+Resultado percentual final                            15.306163
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -1.821534
+Quantidade de operações positivas                     61.000000
+Percentual de operações positivas                     81.333333
+Quantidade de operações negativas                     14.000000
+Percentual de operações negativas                     18.666667
+Media resultados comprados                             0.406231
+Media resultados venda                                 0.007253
+Número abertura de compra                             38.000000
+Número abertura de venda                              38.000000
+Número fechamento de compra                           37.000000
+Número fechamento de venda                            38.000000
+Total de operações abertas                            76.000000
+Total de operações finalizadas                        75.000000
+Maior rebaixamento ma conta durante operacoes        995.108255
+Maior valor alcançado na conta durante operacoes    1198.413738
+Name: 0, dtype: float64"
+14,19,80,"Valor final investido                               1122.943793
+Resultado percentual final                            11.599637
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.486555
+Quantidade de operações positivas                     74.000000
+Percentual de operações positivas                     77.894737
+Quantidade de operações negativas                     21.000000
+Percentual de operações negativas                     22.105263
+Media resultados comprados                             0.273809
+Media resultados venda                                 0.006916
+Número abertura de compra                             42.000000
+Número abertura de venda                              54.000000
+Número fechamento de compra                           41.000000
+Número fechamento de venda                            54.000000
+Total de operações abertas                            96.000000
+Total de operações finalizadas                        95.000000
+Maior rebaixamento ma conta durante operacoes        998.216526
+Maior valor alcançado na conta durante operacoes    1197.172477
+Name: 0, dtype: float64"
+14,19,81,"Valor final investido                               1095.476322
+Resultado percentual final                             9.113271
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.486555
+Quantidade de operações positivas                     67.000000
+Percentual de operações positivas                     77.011494
+Quantidade de operações negativas                     20.000000
+Percentual de operações negativas                     22.988506
+Media resultados comprados                             0.266545
+Media resultados venda                                -0.032948
+Número abertura de compra                             41.000000
+Número abertura de venda                              47.000000
+Número fechamento de compra                           40.000000
+Número fechamento de venda                            47.000000
+Total de operações abertas                            88.000000
+Total de operações finalizadas                        87.000000
+Maior rebaixamento ma conta durante operacoes        993.381064
+Maior valor alcançado na conta durante operacoes    1172.151452
+Name: 0, dtype: float64"
+14,19,82,"Valor final investido                               1102.548556
+Resultado percentual final                             9.747313
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.486555
+Quantidade de operações positivas                     65.000000
+Percentual de operações positivas                     76.470588
+Quantidade de operações negativas                     20.000000
+Percentual de operações negativas                     23.529412
+Media resultados comprados                             0.279004
+Media resultados venda                                -0.031396
+Número abertura de compra                             41.000000
+Número abertura de venda                              45.000000
+Número fechamento de compra                           40.000000
+Número fechamento de venda                            45.000000
+Total de operações abertas                            86.000000
+Total de operações finalizadas                        85.000000
+Maior rebaixamento ma conta durante operacoes        993.381064
+Maior valor alcançado na conta durante operacoes    1179.573845
+Name: 0, dtype: float64"
+14,19,83,"Valor final investido                               1118.438441
+Resultado percentual final                            11.156913
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.453822
+Quantidade de operações positivas                     62.000000
+Percentual de operações positivas                     76.543210
+Quantidade de operações negativas                     19.000000
+Percentual de operações negativas                     23.456790
+Media resultados comprados                             0.290882
+Media resultados venda                                -0.011667
+Número abertura de compra                             41.000000
+Número abertura de venda                              41.000000
+Número fechamento de compra                           40.000000
+Número fechamento de venda                            41.000000
+Total de operações abertas                            82.000000
+Total de operações finalizadas                        81.000000
+Maior rebaixamento ma conta durante operacoes        993.927560
+Maior valor alcançado na conta durante operacoes    1190.006476
+Name: 0, dtype: float64"
+14,19,84,"Valor final investido                               1141.491011
+Resultado percentual final                            13.183307
+Maior resultado operacao fechada                       1.418567
+Menor resultado percentual de operação fechada        -2.453822
+Quantidade de operações positivas                     62.000000
+Percentual de operações positivas                     78.481013
+Quantidade de operações negativas                     17.000000
+Percentual de operações negativas                     21.518987
+Media resultados comprados                             0.330217
+Media resultados venda                                -0.000651
+Número abertura de compra                             41.000000
+Número abertura de venda                              39.000000
+Número fechamento de compra                           40.000000
+Número fechamento de venda                            39.000000
+Total de operações abertas                            80.000000
+Total de operações finalizadas                        79.000000
+Maior rebaixamento ma conta durante operacoes        995.108255
+Maior valor alcançado na conta durante operacoes    1188.468580
+Name: 0, dtype: float64"
+15,15,80,"Valor final investido                               1078.167689
+Resultado percentual final                             3.350189
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -3.271924
+Quantidade de operações positivas                     39.000000
+Percentual de operações positivas                     81.250000
+Quantidade de operações negativas                      9.000000
+Percentual de operações negativas                     18.750000
+Media resultados comprados                             0.425625
+Media resultados venda                                -0.125336
+Número abertura de compra                             17.000000
+Número abertura de venda                              32.000000
+Número fechamento de compra                           17.000000
+Número fechamento de venda                            31.000000
+Total de operações abertas                            49.000000
+Total de operações finalizadas                        48.000000
+Maior rebaixamento ma conta durante operacoes        981.800719
+Maior valor alcançado na conta durante operacoes    1133.383544
+Name: 0, dtype: float64"
+15,15,81,"Valor final investido                               1069.482060
+Resultado percentual final                             2.545613
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -3.271924
+Quantidade de operações positivas                     35.000000
+Percentual de operações positivas                     79.545455
+Quantidade de operações negativas                      9.000000
+Percentual de operações negativas                     20.454545
+Media resultados comprados                             0.433211
+Media resultados venda                                -0.178481
+Número abertura de compra                             17.000000
+Número abertura de venda                              28.000000
+Número fechamento de compra                           17.000000
+Número fechamento de venda                            27.000000
+Total de operações abertas                            45.000000
+Total de operações finalizadas                        44.000000
+Maior rebaixamento ma conta durante operacoes        976.550428
+Maior valor alcançado na conta durante operacoes    1124.225761
+Name: 0, dtype: float64"
+15,15,82,"Valor final investido                               1069.509675
+Resultado percentual final                             2.546518
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -3.271924
+Quantidade de operações positivas                     35.000000
+Percentual de operações positivas                     79.545455
+Quantidade de operações negativas                      9.000000
+Percentual de operações negativas                     20.454545
+Media resultados comprados                             0.438336
+Media resultados venda                                -0.181674
+Número abertura de compra                             17.000000
+Número abertura de venda                              28.000000
+Número fechamento de compra                           17.000000
+Número fechamento de venda                            27.000000
+Total de operações abertas                            45.000000
+Total de operações finalizadas                        44.000000
+Maior rebaixamento ma conta durante operacoes        976.721114
+Maior valor alcançado na conta durante operacoes    1123.836315
+Name: 0, dtype: float64"
+15,15,83,"Valor final investido                               1055.544264
+Resultado percentual final                             3.505708
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -3.271924
+Quantidade de operações positivas                     35.000000
+Percentual de operações positivas                     81.395349
+Quantidade de operações negativas                      8.000000
+Percentual de operações negativas                     18.604651
+Media resultados comprados                             0.446514
+Media resultados venda                                -0.157117
+Número abertura de compra                             17.000000
+Número abertura de venda                              27.000000
+Número fechamento de compra                           17.000000
+Número fechamento de venda                            26.000000
+Total de operações abertas                            44.000000
+Total de operações finalizadas                        43.000000
+Maior rebaixamento ma conta durante operacoes        986.583360
+Maior valor alcançado na conta durante operacoes    1122.493447
+Name: 0, dtype: float64"
+15,15,84,"Valor final investido                               1076.530191
+Resultado percentual final                             5.360342
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -3.271924
+Quantidade de operações positivas                     35.000000
+Percentual de operações positivas                     81.395349
+Quantidade de operações negativas                      8.000000
+Percentual de operações negativas                     18.604651
+Media resultados comprados                             0.466032
+Media resultados venda                                -0.098546
+Número abertura de compra                             17.000000
+Número abertura de venda                              27.000000
+Número fechamento de compra                           17.000000
+Número fechamento de venda                            26.000000
+Total de operações abertas                            44.000000
+Total de operações finalizadas                        43.000000
+Maior rebaixamento ma conta durante operacoes        991.852755
+Maior valor alcançado na conta durante operacoes    1123.110973
+Name: 0, dtype: float64"
+15,16,80,"Valor final investido                               1123.593043
+Resultado percentual final                             7.433593
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -2.915594
+Quantidade de operações positivas                     43.000000
+Percentual de operações positivas                     78.181818
+Quantidade de operações negativas                     12.000000
+Percentual de operações negativas                     21.818182
+Media resultados comprados                             0.366253
+Media resultados venda                                 0.003101
+Número abertura de compra                             20.000000
+Número abertura de venda                              36.000000
+Número fechamento de compra                           20.000000
+Número fechamento de venda                            35.000000
+Total de operações abertas                            56.000000
+Total de operações finalizadas                        55.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1156.852872
+Name: 0, dtype: float64"
+15,16,81,"Valor final investido                               1112.699481
+Resultado percentual final                             6.463326
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -2.915594
+Quantidade de operações positivas                     38.000000
+Percentual de operações positivas                     76.000000
+Quantidade de operações negativas                     12.000000
+Percentual de operações negativas                     24.000000
+Media resultados comprados                             0.381714
+Media resultados venda                                -0.039032
+Número abertura de compra                             20.000000
+Número abertura de venda                              31.000000
+Número fechamento de compra                           20.000000
+Número fechamento de venda                            30.000000
+Total de operações abertas                            51.000000
+Total de operações finalizadas                        50.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1150.897019
+Name: 0, dtype: float64"
+15,16,82,"Valor final investido                               1112.373315
+Resultado percentual final                             6.431201
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -2.915594
+Quantidade de operações positivas                     38.000000
+Percentual de operações positivas                     76.000000
+Quantidade de operações negativas                     12.000000
+Percentual de operações negativas                     24.000000
+Media resultados comprados                             0.386071
+Media resultados venda                                -0.043007
+Número abertura de compra                             20.000000
+Número abertura de venda                              31.000000
+Número fechamento de compra                           20.000000
+Número fechamento de venda                            30.000000
+Total de operações abertas                            51.000000
+Total de operações finalizadas                        50.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1146.161297
+Name: 0, dtype: float64"
+15,16,83,"Valor final investido                               1097.848201
+Resultado percentual final                             7.390392
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -2.780739
+Quantidade de operações positivas                     38.000000
+Percentual de operações positivas                     77.551020
+Quantidade de operações negativas                     11.000000
+Percentual de operações negativas                     22.448980
+Media resultados comprados                             0.393022
+Media resultados venda                                -0.016208
+Número abertura de compra                             20.000000
+Número abertura de venda                              30.000000
+Número fechamento de compra                           20.000000
+Número fechamento de venda                            29.000000
+Total de operações abertas                            50.000000
+Total de operações finalizadas                        49.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1158.525135
+Name: 0, dtype: float64"
+15,16,84,"Valor final investido                               1118.702835
+Resultado percentual final                             9.157673
+Maior resultado operacao fechada                       1.207567
+Menor resultado percentual de operação fechada        -2.766932
+Quantidade de operações positivas                     38.000000
+Percentual de operações positivas                     79.166667
+Quantidade de operações negativas                     10.000000
+Percentual de operações negativas                     20.833333
+Media resultados comprados                             0.431456
+Media resultados venda                                 0.018877
+Número abertura de compra                             20.000000
+Número abertura de venda                              29.000000
+Número fechamento de compra                           20.000000
+Número fechamento de venda                            28.000000
+Total de operações abertas                            49.000000
+Total de operações finalizadas                        48.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1153.055451
+Name: 0, dtype: float64"
+15,17,80,"Valor final investido                               1082.772893
+Resultado percentual final                             5.997585
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -2.569544
+Quantidade de operações positivas                     47.000000
+Percentual de operações positivas                     74.603175
+Quantidade de operações negativas                     16.000000
+Percentual de operações negativas                     25.396825
+Media resultados comprados                             0.295360
+Media resultados venda                                -0.036485
+Número abertura de compra                             25.000000
+Número abertura de venda                              39.000000
+Número fechamento de compra                           25.000000
+Número fechamento de venda                            38.000000
+Total de operações abertas                            64.000000
+Total de operações finalizadas                        63.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1139.449416
+Name: 0, dtype: float64"
+15,17,81,"Valor final investido                               1079.624547
+Resultado percentual final                             5.817827
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -2.569544
+Quantidade de operações positivas                     43.000000
+Percentual de operações positivas                     75.438596
+Quantidade de operações negativas                     14.000000
+Percentual de operações negativas                     24.561404
+Media resultados comprados                             0.344005
+Media resultados venda                                -0.086946
+Número abertura de compra                             25.000000
+Número abertura de venda                              33.000000
+Número fechamento de compra                           25.000000
+Número fechamento de venda                            32.000000
+Total de operações abertas                            58.000000
+Total de operações finalizadas                        57.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1141.137988
+Name: 0, dtype: float64"
+15,17,82,"Valor final investido                               1086.637837
+Resultado percentual final                             6.462393
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -2.569544
+Quantidade de operações positivas                     44.000000
+Percentual de operações positivas                     77.192982
+Quantidade de operações negativas                     13.000000
+Percentual de operações negativas                     22.807018
+Media resultados comprados                             0.347490
+Media resultados venda                                -0.069527
+Número abertura de compra                             25.000000
+Número abertura de venda                              33.000000
+Número fechamento de compra                           25.000000
+Número fechamento de venda                            32.000000
+Total de operações abertas                            58.000000
+Total de operações finalizadas                        57.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1136.442422
+Name: 0, dtype: float64"
+15,17,83,"Valor final investido                               1126.144280
+Resultado percentual final                            10.009692
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -2.434208
+Quantidade de operações positivas                     44.000000
+Percentual de operações positivas                     78.571429
+Quantidade de operações negativas                     12.000000
+Percentual de operações negativas                     21.428571
+Media resultados comprados                             0.361334
+Media resultados venda                                 0.031495
+Número abertura de compra                             25.000000
+Número abertura de venda                              32.000000
+Número fechamento de compra                           25.000000
+Número fechamento de venda                            31.000000
+Total de operações abertas                            57.000000
+Total de operações finalizadas                        56.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1151.566025
+Name: 0, dtype: float64"
+15,17,84,"Valor final investido                               1145.679124
+Resultado percentual final                            11.701891
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -1.870706
+Quantidade de operações positivas                     44.000000
+Percentual de operações positivas                     80.000000
+Quantidade de operações negativas                     11.000000
+Percentual de operações negativas                     20.000000
+Media resultados comprados                             0.392081
+Media resultados venda                                 0.063329
+Número abertura de compra                             25.000000
+Número abertura de venda                              31.000000
+Número fechamento de compra                           25.000000
+Número fechamento de venda                            30.000000
+Total de operações abertas                            56.000000
+Total de operações finalizadas                        55.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1151.891021
+Name: 0, dtype: float64"
+15,18,80,"Valor final investido                               1016.592180
+Resultado percentual final                             1.719203
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     51.000000
+Percentual de operações positivas                     73.913043
+Quantidade de operações negativas                     18.000000
+Percentual de operações negativas                     26.086957
+Media resultados comprados                             0.275167
+Media resultados venda                                -0.145987
+Número abertura de compra                             29.000000
+Número abertura de venda                              41.000000
+Número fechamento de compra                           28.000000
+Número fechamento de venda                            41.000000
+Total de operações abertas                            70.000000
+Total de operações finalizadas                        69.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1141.042959
+Name: 0, dtype: float64"
+15,18,81,"Valor final investido                               1012.903703
+Resultado percentual final                             1.341169
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     47.000000
+Percentual de operações positivas                     75.806452
+Quantidade de operações negativas                     15.000000
+Percentual de operações negativas                     24.193548
+Media resultados comprados                             0.320427
+Media resultados venda                                -0.224435
+Número abertura de compra                             29.000000
+Número abertura de venda                              34.000000
+Número fechamento de compra                           28.000000
+Número fechamento de venda                            34.000000
+Total de operações abertas                            63.000000
+Total de operações finalizadas                        62.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1143.325370
+Name: 0, dtype: float64"
+15,18,82,"Valor final investido                               1020.577677
+Resultado percentual final                             2.093202
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     48.000000
+Percentual de operações positivas                     77.419355
+Quantidade de operações negativas                     14.000000
+Percentual de operações negativas                     22.580645
+Media resultados comprados                             0.328567
+Media resultados venda                                -0.209020
+Número abertura de compra                             29.000000
+Número abertura de venda                              34.000000
+Número fechamento de compra                           28.000000
+Número fechamento de venda                            34.000000
+Total de operações abertas                            63.000000
+Total de operações finalizadas                        62.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1139.694135
+Name: 0, dtype: float64"
+15,18,83,"Valor final investido                               1057.682398
+Resultado percentual final                             5.640501
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     48.000000
+Percentual de operações positivas                     78.688525
+Quantidade de operações negativas                     13.000000
+Percentual de operações negativas                     21.311475
+Media resultados comprados                             0.340928
+Media resultados venda                                -0.118348
+Número abertura de compra                             29.000000
+Número abertura de venda                              33.000000
+Número fechamento de compra                           28.000000
+Número fechamento de venda                            33.000000
+Total de operações abertas                            62.000000
+Total de operações finalizadas                        61.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1154.861011
+Name: 0, dtype: float64"
+15,18,84,"Valor final investido                               1075.575126
+Resultado percentual final                             7.291090
+Maior resultado operacao fechada                       1.104560
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     47.000000
+Percentual de operações positivas                     79.661017
+Quantidade de operações negativas                     12.000000
+Percentual de operações negativas                     20.338983
+Media resultados comprados                             0.378482
+Media resultados venda                                -0.106658
+Número abertura de compra                             29.000000
+Número abertura de venda                              31.000000
+Número fechamento de compra                           28.000000
+Número fechamento de venda                            31.000000
+Total de operações abertas                            60.000000
+Total de operações finalizadas                        59.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1149.408627
+Name: 0, dtype: float64"
+15,19,80,"Valor final investido                                978.460073
+Resultado percentual final                            -2.069012
+Maior resultado operacao fechada                       1.369287
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     49.000000
+Percentual de operações positivas                     69.014085
+Quantidade de operações negativas                     22.000000
+Percentual de operações negativas                     30.985915
+Media resultados comprados                             0.133007
+Media resultados venda                                -0.141100
+Número abertura de compra                             30.000000
+Número abertura de venda                              42.000000
+Número fechamento de compra                           29.000000
+Número fechamento de venda                            42.000000
+Total de operações abertas                            72.000000
+Total de operações finalizadas                        71.000000
+Maior rebaixamento ma conta durante operacoes        975.294491
+Maior valor alcançado na conta durante operacoes    1128.927638
+Name: 0, dtype: float64"
+15,19,81,"Valor final investido                                976.298546
+Resultado percentual final                            -2.306094
+Maior resultado operacao fechada                       1.369287
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     46.000000
+Percentual de operações positivas                     71.875000
+Quantidade de operações negativas                     18.000000
+Percentual de operações negativas                     28.125000
+Media resultados comprados                             0.179161
+Media resultados venda                                -0.214336
+Número abertura de compra                             30.000000
+Número abertura de venda                              35.000000
+Número fechamento de compra                           29.000000
+Número fechamento de venda                            35.000000
+Total de operações abertas                            65.000000
+Total de operações finalizadas                        64.000000
+Maior rebaixamento ma conta durante operacoes        973.139957
+Maior valor alcançado na conta durante operacoes    1132.796999
+Name: 0, dtype: float64"
+15,19,82,"Valor final investido                                983.857599
+Resultado percentual final                            -1.537569
+Maior resultado operacao fechada                       1.369287
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     47.000000
+Percentual de operações positivas                     73.437500
+Quantidade de operações negativas                     17.000000
+Percentual de operações negativas                     26.562500
+Media resultados comprados                             0.187021
+Media resultados venda                                -0.198891
+Número abertura de compra                             30.000000
+Número abertura de venda                              35.000000
+Número fechamento de compra                           29.000000
+Número fechamento de venda                            35.000000
+Total de operações abertas                            65.000000
+Total de operações finalizadas                        64.000000
+Maior rebaixamento ma conta durante operacoes        980.674554
+Maior valor alcançado na conta durante operacoes    1129.199203
+Name: 0, dtype: float64"
+15,19,83,"Valor final investido                               1020.656488
+Resultado percentual final                             2.121812
+Maior resultado operacao fechada                       1.369287
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     46.000000
+Percentual de operações positivas                     75.409836
+Quantidade de operações negativas                     15.000000
+Percentual de operações negativas                     24.590164
+Media resultados comprados                             0.215464
+Media resultados venda                                -0.118521
+Número abertura de compra                             29.000000
+Número abertura de venda                              33.000000
+Número fechamento de compra                           28.000000
+Número fechamento de venda                            33.000000
+Total de operações abertas                            62.000000
+Total de operações finalizadas                        61.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1150.550128
+Name: 0, dtype: float64"
+15,19,84,"Valor final investido                               1044.739849
+Resultado percentual final                             4.407014
+Maior resultado operacao fechada                       1.369287
+Menor resultado percentual de operação fechada        -4.560030
+Quantidade de operações positivas                     45.000000
+Percentual de operações positivas                     76.271186
+Quantidade de operações negativas                     14.000000
+Percentual de operações negativas                     23.728814
+Media resultados comprados                             0.275683
+Media resultados venda                                -0.106842
+Número abertura de compra                             29.000000
+Número abertura de venda                              31.000000
+Número fechamento de compra                           28.000000
+Número fechamento de venda                            31.000000
+Total de operações abertas                            60.000000
+Total de operações finalizadas                        59.000000
+Maior rebaixamento ma conta durante operacoes        998.339320
+Maior valor alcançado na conta durante operacoes    1145.265442
+Name: 0, dtype: float64"

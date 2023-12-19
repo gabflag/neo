@@ -78,7 +78,8 @@ Como usar o GIT:
                 git checkout gabriel
                 git merge main
 
-
+        Joao acabou de fazer operacao no readme
+        
 Instalações necessárias:
     pip install yfinance
     pip install python-dotenv
