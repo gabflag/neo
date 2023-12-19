@@ -54,7 +54,6 @@ Como usar o GIT:
             git reset --hard
     
 
-
         Criando um novo Branch e logando nele:
             Estar logando no branch principal:
                 git checkout main
