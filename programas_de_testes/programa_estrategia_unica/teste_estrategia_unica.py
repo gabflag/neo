@@ -8,7 +8,7 @@ import time
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-
+import numpy as np
 
 def realiza_trades(df_group_trades_raw, df):
     '''
@@ -263,9 +263,9 @@ def mostrar_grafico_operacao_rsi(df_group_trades_raw, df):
 
     
     # # Adicionando Grafico RSI do RSI
-    # fig.add_trace(go.Scatter(x=df['Datetime'],
-    #                         y=df['rsi'],
-    #                         name=f'RSI'), row=2, col=1)
+    fig.add_trace(go.Scatter(x=df_group_trades_raw.index,
+                             y=df_group_trades_raw['rsi'],
+                             name=f'RSI'), row=2, col=1)
     
     # Criando um dicionário de limitação de hora e dias que devem ser excluidos, como é bitcoin
     #fig.update_xaxes(rangebreaks=[dict(bounds=[17,10], pattern='hour'), dict(bounds=['sat','mon'])])
@@ -282,25 +282,34 @@ def main():
     valor_inicial = 1000
     bet_size = 1
     periodos_rsi = 14
-    rsi_base = 20
-    rsi_teto = 85
+    rsi_base = 15
+    rsi_teto = 80
     percentual_compra = 1.005
-    percentual_venda = 0.997
+    percentual_venda = 0.99
 
-    resultados = pd.DataFrame()
+    # resultados = pd.DataFrame()
 
-    for periodos_rsi in range(14, 16):
-        for rsi_base in range(15, 20):
-            for rsi_teto in range(80,85):
-                df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
-                df_resultado = realiza_trades(df_group_trades_raw, df)
-                df_resultado['periodos_rsi'] = periodos_rsi
-                df_resultado['rsi_base'] = rsi_base
-                df_resultado['rsi_teto'] = rsi_teto
-                resultados = resultados._append(df_resultado, ignore_index=True)
+    # for periodos_rsi in range(14, 16):
+    #     for rsi_base in range(15, 20):
+    #         for rsi_teto in range(80,85):
+    #             for percentual_compra in np.arange(1.005, 1.012, 0.001):
+    #                 for percentual_venda in np.arange(0.990, 0.997, 0.001):
+    #                     print(percentual_compra)
+    #                     print(percentual_venda)
 
-                
-    resultados.to_csv('resultados_completos.csv', index=False)
+    #                     df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
+    #                     df_resultado = realiza_trades(df_group_trades_raw, df)
+    #                     df_resultado['periodos_rsi'] = periodos_rsi
+    #                     df_resultado['rsi_base'] = rsi_base
+    #                     df_resultado['rsi_teto'] = rsi_teto
+    #                     df_resultado['percentual_compra'] = percentual_compra
+    #                     df_resultado['percentual_venda'] = percentual_venda
+    #                     resultados = resultados._append(df_resultado, ignore_index=True)
+
+    # resultados.to_csv('resultados_completos.csv', index=False)
+
+    df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
+    mostrar_grafico_operacao_rsi(df_group_trades_raw, df)
 
 
 def calcular_tempo_total(segundos_por_execucao, numero_de_execucoes):

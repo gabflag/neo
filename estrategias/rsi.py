@@ -131,7 +131,18 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
                             'preco_de_abertura':pd.NA, 'preco_de_fechamento': pd.NA, 
                             'hora_abertura':pd.NA, 'hora_fechou': pd.NA, 
                             'kind':'During', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
-                            'time': row['Datetime']}]
+                           'time': row['Datetime'], 'rsi': row['rsi']}]
+
+
+        ##########################
+        ######### Durante periodos normais
+        if operando == False:
+            list_trades += [{'valor_investimento': pd.NA, 'durante_operacao':  pd.NA,
+                            'preco_de_abertura':pd.NA, 'preco_de_fechamento': pd.NA, 
+                            'hora_abertura':pd.NA, 'hora_fechou': pd.NA, 
+                            'kind':'During', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
+                            'time': row['Datetime'], 'rsi': row['rsi']}]
+
 
         ##########################
         ######### Abrir operações
@@ -156,8 +167,6 @@ def operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_
                             'hora_abertura':hora_abertura,'hora_fechou': pd.NA, 
                             'kind':'Sell', 'quantity':bet_size, 'diferenca_percentual':pd.NA,
                             'time': row['Datetime']}]
-
-
 
 
     # Criando df de operações
