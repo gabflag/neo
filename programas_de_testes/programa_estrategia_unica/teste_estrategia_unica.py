@@ -287,24 +287,20 @@ def main():
     percentual_compra = 1.005
     percentual_venda = 0.997
 
-    resultados = []
+    resultados = pd.DataFrame()
 
     for periodos_rsi in range(14, 16):
         for rsi_base in range(15, 20):
             for rsi_teto in range(80,85):
                 df_group_trades_raw = rsi.operando_com_rsi(banco_de_dados, valor_inicial, bet_size, periodos_rsi, rsi_base, rsi_teto, percentual_compra, percentual_venda)
                 df_resultado = realiza_trades(df_group_trades_raw, df)
+                df_resultado['periodos_rsi'] = periodos_rsi
+                df_resultado['rsi_base'] = rsi_base
+                df_resultado['rsi_teto'] = rsi_teto
+                resultados = resultados._append(df_resultado, ignore_index=True)
 
-
-                resultados.append({
-                    'periodos_rsi': periodos_rsi,
-                    'rsi_base': rsi_base,
-                    'rsi_teto': rsi_teto,
-                    'resultado_df': df_resultado.iloc[0]      
-            })
-
-    resultados_df = pd.DataFrame(resultados)
-    resultados_df.to_csv('resultados_completos.csv', index=False)
+                
+    resultados.to_csv('resultados_completos.csv', index=False)
 
 
 def calcular_tempo_total(segundos_por_execucao, numero_de_execucoes):
