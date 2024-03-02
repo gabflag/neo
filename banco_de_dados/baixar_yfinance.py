@@ -6,8 +6,10 @@ def baixar_dados():
     com o timeframe de 1 minuto. O YahooFinance permite baixar apenas
     7 dias quando o timeframe é de 1 minuto
     '''
-    data = yf.download(tickers=['BTC-USD'], period='1mo', interval="5m")
-    data.to_csv('btcusd_5_min.csv')
+    data = yf.download(tickers=['EURUSD=X'], period='1mo', interval="5m")
+    data.to_csv('EURUSD_5_min.csv')
 
     # Exibir os primeiros registros dos dados
     print(data.head())
+
+baixar_dados()
