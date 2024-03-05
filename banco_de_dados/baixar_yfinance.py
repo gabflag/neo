@@ -1,3 +1,6 @@
+# https://www.cboe.com/us/equities/market_statistics/listed_symbols/
+# https://finance.yahoo.com/calendar/
+
 import yfinance as yf
 
 def baixar_dados():
@@ -6,10 +9,11 @@ def baixar_dados():
     com o timeframe de 1 minuto. O YahooFinance permite baixar apenas
     7 dias quando o timeframe é de 1 minuto
     '''
-    data = yf.download(tickers=['EURUSD=X'], period='1mo', interval="5m")
-    data.to_csv('EURUSD_5_min.csv')
+    data = yf.download(tickers=['GC=F'], period='Max', interval="1D")
+    data.to_csv('GOLG_1_D.csv')
 
     # Exibir os primeiros registros dos dados
     print(data.head())
 
 baixar_dados()
+

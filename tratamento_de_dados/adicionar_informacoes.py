@@ -50,12 +50,12 @@ def calcule_rsi(df, periods):
 
     return rsi
 
-def rsi(df):
+def rsi(df, periodos):
     '''
     Adiciona ao dataframe os valores de rsi
     Recebe um dataframe e retorna um dataframe
     '''
-    range_periods_rsi = range(2,15)
+    range_periods_rsi = range(2,periodos)
     for rsi in range_periods_rsi:
         rsi_collum_name = 'rsi_' +  str(rsi)
         df[rsi_collum_name] = calcule_rsi(df, rsi)
@@ -82,10 +82,37 @@ def calcula_media_movel_simples(df, ma):
 
     return df
 
-def sma(df):
-    range_periods_sma = range(2,15)
+def sma(df,periodos):
+    range_periods_sma = range(2,periodos)
     for sma in range_periods_sma:
         df = calcula_media_movel_simples(df, sma)
+    return df
+
+
+def calcula_media_movel_exponencial(df, ma):
+    '''
+    Calcula a média móvel exponencial (EMA) no DataFrame.
+    ewm() (exponential weighted moving average)
+    '''
+
+    ema_column_open = 'ema_open_' + str(ma)
+    ema_column_close = 'ema_close_' + str(ma)
+    ema_column_high = 'ema_high_' + str(ma)
+    ema_column_low = 'ema_low_' + str(ma)
+    ema_column_media = 'media_valores_' + str(ma)
+
+    df[ema_column_open] = df['Open'].ewm(span=ma, adjust=False).mean()
+    df[ema_column_close] = df['High'].ewm(span=ma, adjust=False).mean()
+    df[ema_column_high] = df['Low'].ewm(span=ma, adjust=False).mean()
+    df[ema_column_low] = df['Close'].ewm(span=ma, adjust=False).mean()
+    df[ema_column_media] = df['Close'].ewm(span=ma, adjust=False).mean()
+
+    return df
+
+def ema(df, periodos):
+    range_periods_ema = range(2, periodos)
+    for ema in range_periods_ema:
+        df = calcula_media_movel_exponencial(df, ema)
     return df
 
 
@@ -95,13 +122,13 @@ def main():
 
     df['media_valores'] = df[['Open', 'High', 'Low', 'Close']].mean(axis=1)
 
+    periodos = 10
+
     df = diferencas_percentuais(df)
-    df = rsi(df)
+    df = rsi(df, periodos)
 
-    df = sma(df)
-
-    print("")
-    print(df.head(30))
+    df = sma(df, periodos)
+    df = ema(df, periodos)
 
     df.to_csv('/home/gabriel/Desktop/Codes/neo/tratamento_de_dados/tratados.csv')
 

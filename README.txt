@@ -2,8 +2,12 @@
 
 Link oficial do respositorio: https://github.com/gabflag/neo
 
-
 Repositorio destinado para elaborar as estratégias e testar as mesmas com o Python.
+
+Para estratégias:
+    Definição de tendência = Calculo de Hurts - Bom para encotrar geometria dos preços
+    Mercado Lateralizados = Stocastic
+    Mercado em Angulo = Regressão Linear
 
 
 Principais definições do projeto:
