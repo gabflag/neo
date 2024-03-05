@@ -95,22 +95,3 @@ def main():
     resultados.to_csv('resultados_teste.csv')
 
 main()
-
-
-
-
-# print('\n')
-# print(f'Coenficiente linear: {b0}')
-# print(f'Coeficiente angular: {b1}')
-# print(f"Valor estimado de x = {valor_x_avaliado} no eixo y é {y_estimado}")
-# print("Coeficiente de Determinação (R²):", r_squared)
-# print("Coeficiente de Correlação de Pearson")
-# print('\n')
-
-# pyplot.scatter(df_eixo_x, df_eixo_y)
-# pyplot.plot(valor_x_avaliado, y_estimado, marker='o', markersize=12, color='green') 
-# pyplot.plot(df_eixo_x, b0 + b1 * df_eixo_x, color='red') # faço uma reta com base no valor perfeito para o eixo x
-# pyplot.xlabel('Eixo X')
-# pyplot.ylabel('Eixo Y')
-# pyplot.title('Regressão Linear Simples')
-# pyplot.show()

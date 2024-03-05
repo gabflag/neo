@@ -9,8 +9,8 @@ def baixar_dados():
     com o timeframe de 1 minuto. O YahooFinance permite baixar apenas
     7 dias quando o timeframe é de 1 minuto
     '''
-    data = yf.download(tickers=['GC=F'], period='Max', interval="1D")
-    data.to_csv('GOLG_1_D.csv')
+    data = yf.download(tickers=['YM=F'], period='Max', interval="1D")
+    data.to_csv('10_Year_T_NoteFutures_total_1_D.csv')
 
     # Exibir os primeiros registros dos dados
     print(data.head())

@@ -33,7 +33,6 @@ import matplotlib.pyplot as plt
 
     A função np.polyfit calcula a regressão linear dos logs de lags e sigmas e retorna 
     a tupla (H, c) onde H é o Expoente de Hurst e c é o coeficiente linear da reta.
-
 """
 
 def hurst(price, min_lag, max_lag):

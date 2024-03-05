@@ -130,6 +130,13 @@ def main():
     df = sma(df, periodos)
     df = ema(df, periodos)
 
+
+    df['Year'] = df['Date'].dt.year
+    df['Month'] = df['Date'].dt.month
+    df['Day'] = df['Date'].dt.day
+    df['Day_of_week'] = df['Date'].dt.day_of_week
+
+
     df.to_csv('/home/gabriel/Desktop/Codes/neo/tratamento_de_dados/tratados.csv')
 
 main()
